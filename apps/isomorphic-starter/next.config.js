@@ -4,6 +4,9 @@ module.exports = {
     ignoreBuildErrors: true,
   },
   reactStrictMode: true,
+  experimental: {
+    appDir: true,
+  },
   images: {
     domains: ['s3.amazonaws.com'],
     remotePatterns: [
