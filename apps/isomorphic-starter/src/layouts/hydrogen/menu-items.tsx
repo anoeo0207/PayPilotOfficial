@@ -2,12 +2,6 @@ import { routes } from "@/config/routes";
 import { DUMMY_ID } from "@/config/constants";
 import {
   PiCurrencyDollarDuotone,
-  PiSquaresFourDuotone,
-  PiUserPlusDuotone,
-  PiShieldCheckDuotone,
-  PiLockKeyDuotone,
-  PiChatCenteredDotsDuotone,
-  PiHouseLineDuotone,
   PiFolder,
   PiPlusCircle,
   PiUserPlus,
@@ -15,7 +9,8 @@ import {
   PiChat,
   PiGear,
   PiQuestion,
-  PiAppWindow
+  PiAppWindow,
+  PiDoorOpen
 } from "react-icons/pi";
 
 // Note: do not add href in the label object, it is rendering as label
@@ -86,56 +81,47 @@ export const menuItems = [
   // label end
   {
     name: "Support And Help",
-    href: routes.widgets.cards,
+    href: routes.Settings.support,
     icon: <PiQuestion />,
   },
+
   {
     name: "Settings",
-    href: routes.widgets.cards,
+    href: routes.Settings.data,
     icon: <PiGear />,
     dropdownItems: [
       {
-        name: "List",
-        href: routes.Customers.dashboard,
+        name: "General",
+        href: routes.Settings.general,
       },
       {
-        name: "Add",
-        href: routes.Customers.add,
+        name: "Data Controller",
+        href: routes.Settings.data,
       },
       {
-        name: "Remove",
-        href: routes.invoice.edit(DUMMY_ID),
+        name: "Account Center",
+        href: routes.Settings.account,
       },
     ],
   },
+
   {
-    name: "Also From AE",
-    href: routes.widgets.cards,
+    name: "Developed by AE",
+    href: routes.Settings.account,
     icon: <PiAppWindow />,
   },
-  // label start
+  // {
+  //   name: "Developed by AE",
+  //   href: routes.Settings.account,
+  //   icon: <PiAppWindow />,
+  // },
+   // label start
   {
-    name: "Authentication",
-  },
-  // label end
-  {
-    name: "Sign Up",
-    href: "#",
-    icon: <PiUserPlusDuotone />,
-  },
-  {
-    name: "Sign In",
-    href: "#",
-    icon: <PiShieldCheckDuotone />,
+    name: "Session",
   },
   {
-    name: "Forgot Password",
+    name: "Log Out",
     href: "#",
-    icon: <PiLockKeyDuotone />,
-  },
-  {
-    name: "OTP Pages",
-    href: "#",
-    icon: <PiChatCenteredDotsDuotone />,
+    icon: <PiDoorOpen />,
   },
 ];
