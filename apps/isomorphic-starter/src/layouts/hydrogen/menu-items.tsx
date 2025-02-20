@@ -54,20 +54,6 @@ export const menuItems = [
     name: "Customer List",
     href: routes.Customers.dashboard,
     icon: <PiUserCircle />
-    // dropdownItems: [
-    //   {
-    //     name: "List",
-    //     href: routes.Customers.dashboard,
-    //   },
-    //   {
-    //     name: "Add",
-    //     href: routes.Customers.add,
-    //   },
-    //   {
-    //     name: "Remove",
-    //     href: routes.invoice.edit(DUMMY_ID),
-    //   },
-    // ],
   },
   {
     name: "Add Customer",
@@ -86,31 +72,31 @@ export const menuItems = [
   // label end
   {
     name: "Support And Help",
-    href: routes.widgets.cards,
+    href: routes.Settings.support,
     icon: <PiQuestion />,
   },
   {
     name: "Settings",
-    href: routes.widgets.cards,
+    href: "#",
     icon: <PiGear />,
     dropdownItems: [
       {
-        name: "List",
-        href: routes.Customers.dashboard,
+        name: "General",
+        href: routes.Settings.general,
       },
       {
-        name: "Add",
-        href: routes.Customers.add,
+        name: "Account Center",
+        href: routes.Settings.account,
       },
       {
-        name: "Remove",
-        href: routes.invoice.edit(DUMMY_ID),
+        name: "Data Controller",
+        href: routes.Settings.data,
       },
     ],
   },
   {
-    name: "Also From AE",
-    href: routes.widgets.cards,
+    name: "Developed by AE",
+    href: routes.Settings.developer,
     icon: <PiAppWindow />,
   },
   // label start
@@ -137,5 +123,14 @@ export const menuItems = [
     name: "OTP Pages",
     href: "#",
     icon: <PiChatCenteredDotsDuotone />,
+  },
+  {
+    name: "Session",
+  },
+  // label end
+  {
+    name: "Log Out",
+    href: "#",
+    icon: <PiUserPlusDuotone />,
   },
 ];

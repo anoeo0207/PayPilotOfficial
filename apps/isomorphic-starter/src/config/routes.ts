@@ -18,7 +18,11 @@ export const routes = {
   },
 
   Settings: {
-
+    general: "/d-settings/general",
+    account: "/d-settings/account-center",
+    data: "/d-settings/data-controller",
+    support: "/d-settings/support-and-help",
+    developer: "/d-settings/developed-by-ae"
   },
 
   Authentication: {
