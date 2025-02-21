@@ -13,7 +13,7 @@ export default function AccountCenter() {
       <div className="mx-auto space-y-8">
         <div>
           <h1 className="text-3xl font-bold">Account Center</h1>
-          <p className="text-muted-foreground mt-2">Manage your account settings and preferences</p>
+          <p className="  text-black mt-2">Manage your account settings and preferences</p>
         </div>
 
         <Card>
@@ -29,7 +29,7 @@ export default function AccountCenter() {
           <CardContent className="space-y-6">
             <div className="flex items-center space-x-4">
               <div className="h-20 w-20 rounded-full bg-muted flex items-center justify-center">
-                <User className="h-10 w-10 text-muted-foreground" />
+                <User className="h-10 w-10  " />
               </div>
               <Button variant="outline">Change Avatar</Button>
             </div>
@@ -65,7 +65,7 @@ export default function AccountCenter() {
               <div className="flex items-center justify-between">
                 <div>
                   <h4 className="font-medium">Two-Factor Authentication</h4>
-                  <p className="text-sm text-muted-foreground">Add an extra layer of security</p>
+                  <p className="text-sm  ">Add an extra layer of security</p>
                 </div>
                 <Button variant="outline">Enable</Button>
               </div>
@@ -73,7 +73,7 @@ export default function AccountCenter() {
               <div className="flex items-center justify-between">
                 <div>
                   <h4 className="font-medium">Password</h4>
-                  <p className="text-sm text-muted-foreground">Last changed 3 months ago</p>
+                  <p className="text-sm  ">Last changed 3 months ago</p>
                 </div>
                 <Button variant="outline">Change</Button>
               </div>
@@ -96,7 +96,7 @@ export default function AccountCenter() {
               <div className="flex items-center justify-between">
                 <div>
                   <h4 className="font-medium">Current Plan</h4>
-                  <p className="text-sm text-muted-foreground">Professional</p>
+                  <p className="text-sm  ">Professional</p>
                 </div>
                 <Badge variant="secondary">Active</Badge>
               </div>
@@ -104,7 +104,7 @@ export default function AccountCenter() {
               <div className="flex items-center justify-between">
                 <div>
                   <h4 className="font-medium">Next Billing Date</h4>
-                  <p className="text-sm text-muted-foreground">July 1, 2024</p>
+                  <p className="text-sm  ">July 1, 2024</p>
                 </div>
                 <Button variant="outline">View History</Button>
               </div>

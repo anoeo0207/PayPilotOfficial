@@ -73,7 +73,7 @@ export function renderDisplayValue(
       )}
     >
       <div className="flex items-center gap-1 pe-2">
-        <PiPlusCircle className="size-5 text-muted-foreground" />
+        <PiPlusCircle className="size-5  " />
         Social
       </div>
       {!isEmpty && (

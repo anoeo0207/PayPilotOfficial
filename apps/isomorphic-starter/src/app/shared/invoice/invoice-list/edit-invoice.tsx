@@ -248,7 +248,7 @@ export default function EditInvoiceForm({
                     variant={"outline"}
                     className={cn(
                       "w-full justify-start text-left font-normal",
-                      !date && "text-muted-foreground"
+                      !date && " "
                     )}
                   >
                     {date ? format(date, "PPP") : <span>Pick a date</span>}

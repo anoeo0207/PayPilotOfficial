@@ -112,7 +112,7 @@ console.log(invoices);
                   </div>
                 </CardContent>
                 <CardFooter>
-                  <div className="text-xs text-muted-foreground">
+                  <div className="text-xs  ">
                     <strong>Recent invoices from your customer</strong>
                   </div>
                 </CardFooter>

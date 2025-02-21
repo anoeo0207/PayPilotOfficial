@@ -12,7 +12,7 @@ export default function GeneralSettings() {
       <div className="mx-auto space-y-8">
         <div>
           <h1 className="text-3xl font-bold">General Settings</h1>
-          <p className="text-muted-foreground mt-2">Manage your application preferences and settings</p>
+          <p className="mt-2">Manage your application preferences and settings</p>
         </div>
 
         <Card>
@@ -29,14 +29,14 @@ export default function GeneralSettings() {
             <div className="flex items-center justify-between">
               <div className="space-y-0.5">
                 <Label>Dark Mode</Label>
-                <p className="text-sm text-muted-foreground">Switch between light and dark themes</p>
+                <p className="text-sm  ">Switch between light and dark themes</p>
               </div>
               <Switch />
             </div>
             <div className="flex items-center justify-between">
               <div className="space-y-0.5">
                 <Label>Compact Mode</Label>
-                <p className="text-sm text-muted-foreground">Reduce spacing between elements</p>
+                <p className="text-sm  ">Reduce spacing between elements</p>
               </div>
               <Switch />
             </div>
@@ -57,14 +57,14 @@ export default function GeneralSettings() {
             <div className="flex items-center justify-between">
               <div className="space-y-0.5">
                 <Label>Email Notifications</Label>
-                <p className="text-sm text-muted-foreground">Receive updates via email</p>
+                <p className="text-sm  ">Receive updates via email</p>
               </div>
               <Switch />
             </div>
             <div className="flex items-center justify-between">
               <div className="space-y-0.5">
                 <Label>Push Notifications</Label>
-                <p className="text-sm text-muted-foreground">Get notified in your browser</p>
+                <p className="text-sm  ">Get notified in your browser</p>
               </div>
               <Switch />
             </div>

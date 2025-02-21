@@ -29,9 +29,9 @@ export default function HelpPage() {
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">How can we help you?</h1>
-            <p className="text-lg text-muted-foreground">Search our knowledge base or browse categories below</p>
+            <p className="text-lg">Search our knowledge base or browse categories below</p>
             <div className="relative max-w-xl mx-auto">
-              <Search className="absolute left-3 top-3 h-5 w-5 text-muted-foreground" />
+              <Search className="absolute left-3 top-3 h-5 w-5  " />
               <Input
                 className="pl-10 h-12 text-lg"
                 placeholder="Search for answers..."
@@ -164,7 +164,7 @@ export default function HelpPage() {
         <div className="bg-white rounded-lg p-8 shadow-sm">
           <div className="max-w-2xl mx-auto text-center space-y-6">
             <h2 className="text-2xl font-semibold">Still need help?</h2>
-            <p className="text-muted-foreground">Our support team is available 24/7 to assist you</p>
+            <p className=" ">Our support team is available 24/7 to assist you</p>
             <div className="grid gap-4 sm:grid-cols-3">
               <Button variant="outline" className="h-auto py-4 space-y-2">
                 <Mail className="h-5 w-5 mb-1" />
@@ -179,7 +179,7 @@ export default function HelpPage() {
                 <span className="block">Phone Support</span>
               </Button>
             </div>
-            <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">
+            <div className="flex items-center justify-center space-x-2 text-sm  ">
               <CheckCircle2 className="h-4 w-4 text-green-500" />
               <span>Average response time: Under 5 minutes</span>
             </div>

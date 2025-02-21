@@ -18,7 +18,7 @@ export function DatePicker({ date, setDate }: { date: Date | undefined, setDate:
           variant={"outline"}
           className={cn(
             "w-full justify-start text-left font-normal",
-            !date && "text-muted-foreground"
+            !date && " "
           )}
         >
           <CalendarIcon className="mr-2 h-4 w-4" />

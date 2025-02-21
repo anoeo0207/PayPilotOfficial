@@ -75,7 +75,7 @@ export default function AnalyzeCustomer({
                     <AvatarImage src={customer.image_url} />
                   </Avatar>
                   <h2 className="text-2xl font-bold">{customer.name}</h2>
-                  <p className="text-sm text-muted-foreground mb-4 font-semibold">Customer ID: {customer.id}</p>
+                  <p className="text-sm   mb-4 font-semibold">Customer ID: {customer.id}</p>
                   <div className="grid gap-2 text-sm">
                     <div className="flex items-center">
                       <Mail className="mr-2 h-4 w-4" />
@@ -112,7 +112,7 @@ export default function AnalyzeCustomer({
                       <Card>
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                           <CardTitle className="text-sm font-bold">Total Invoice</CardTitle>
-                          <ReceiptText className="h-4 w-4 text-muted-foreground" />
+                          <ReceiptText className="h-4 w-4  " />
                         </CardHeader>
                         <CardContent>
                           <div className="text-2xl font-bold">1</div>
@@ -121,7 +121,7 @@ export default function AnalyzeCustomer({
                       <Card>
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                           <CardTitle className="text-sm font-bold">Total Paid</CardTitle>
-                          <ReceiptText className="h-4 w-4 text-muted-foreground" />
+                          <ReceiptText className="h-4 w-4  " />
                         </CardHeader>
                         <CardContent>
                           <div className="text-2xl font-bold text-green-600">1</div>
@@ -130,7 +130,7 @@ export default function AnalyzeCustomer({
                       <Card>
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                           <CardTitle className="text-sm font-bold">Total Pending</CardTitle>
-                          <ReceiptText className="h-4 w-4 text-muted-foreground" />
+                          <ReceiptText className="h-4 w-4  " />
                         </CardHeader>
                         <CardContent>
                           <div className="text-2xl font-bold text-yellow-600">1</div>
@@ -144,7 +144,7 @@ export default function AnalyzeCustomer({
                     <Card className="bg-blue-100">
                       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                         <CardTitle className="text-sm font-bold">Total Amount</CardTitle>
-                        <DollarSign className="h-4 w-4 text-muted-foreground" />
+                        <DollarSign className="h-4 w-4  " />
                       </CardHeader>
                       <CardContent>
                         <div className="text-2xl font-bold">{formatCurrency(data.total_amount)}
@@ -154,7 +154,7 @@ export default function AnalyzeCustomer({
                     <Card className="bg-green-100">
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                           <CardTitle className="text-sm font-bold">Total Money Paid</CardTitle>
-                          <DollarSign className="h-4 w-4 text-muted-foreground" />
+                          <DollarSign className="h-4 w-4  " />
                         </CardHeader>
                         <CardContent>
                           <div className="text-2xl font-bold text-green-600">{formatCurrency(data.total_money_paid)}</div>
@@ -163,7 +163,7 @@ export default function AnalyzeCustomer({
                       <Card className="bg-yellow-100">
                         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
                           <CardTitle className="text-sm font-bold">Total Money Pending</CardTitle>
-                          <DollarSign className="h-4 w-4 text-muted-foreground" />
+                          <DollarSign className="h-4 w-4  " />
                         </CardHeader>
                         <CardContent>
                           <div className="text-2xl font-bold text-yellow-600">{formatCurrency(data.total_money_pending)}</div>
@@ -182,11 +182,11 @@ export default function AnalyzeCustomer({
                       {customerData.recentTransactions.map((transaction) => (
                         <div key={transaction.id} className="flex items-center">
                           <div className="mr-4">
-                            <Calendar className="h-4 w-4 text-muted-foreground" />
+                            <Calendar className="h-4 w-4  " />
                           </div>
                           <div className="flex-grow">
                             <p className="text-sm font-medium">{transaction.date}</p>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-sm  ">
                               {transaction.status === "paid" ? "Payment received" : "Invoice sent"}
                             </p>
                           </div>
@@ -211,11 +211,11 @@ export default function AnalyzeCustomer({
                       {customerData.recentTransactions.map((transaction) => (
                         <div key={transaction.id} className="flex items-center">
                           <div className="mr-4">
-                            <Calendar className="h-4 w-4 text-muted-foreground" />
+                            <Calendar className="h-4 w-4  " />
                           </div>
                           <div className="flex-grow">
                             <p className="text-sm font-medium">{transaction.date}</p>
-                            <p className="text-sm text-muted-foreground">
+                            <p className="text-sm  ">
                               {transaction.status === "paid" ? "Payment received" : "Invoice sent"}
                             </p>
                           </div>

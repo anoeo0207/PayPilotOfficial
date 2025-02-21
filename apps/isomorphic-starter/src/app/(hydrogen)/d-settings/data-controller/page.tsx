@@ -11,7 +11,7 @@ export default function DataController() {
       <div className="mx-auto space-y-8">
         <div>
           <h1 className="text-3xl font-bold">Data Controller</h1>
-          <p className="text-muted-foreground mt-2">Manage your data and storage settings</p>
+          <p className="  mt-2">Manage your data and storage settings</p>
         </div>
 
         <Card>
@@ -36,17 +36,17 @@ export default function DataController() {
               <div className="p-4 border rounded-lg">
                 <h4 className="font-medium mb-2">Documents</h4>
                 <p className="text-2xl font-bold">35GB</p>
-                <p className="text-sm text-muted-foreground">46% of total</p>
+                <p className="text-sm  ">46% of total</p>
               </div>
               <div className="p-4 border rounded-lg">
                 <h4 className="font-medium mb-2">Media</h4>
                 <p className="text-2xl font-bold">25GB</p>
-                <p className="text-sm text-muted-foreground">33% of total</p>
+                <p className="text-sm  ">33% of total</p>
               </div>
               <div className="p-4 border rounded-lg">
                 <h4 className="font-medium mb-2">Other</h4>
                 <p className="text-2xl font-bold">15GB</p>
-                <p className="text-sm text-muted-foreground">21% of total</p>
+                <p className="text-sm  ">21% of total</p>
               </div>
             </div>
           </CardContent>
