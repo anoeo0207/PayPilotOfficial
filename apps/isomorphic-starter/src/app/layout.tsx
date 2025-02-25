@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }):
   const pathname = usePathname()
 
   // Danh sách các trang không cần layout
-  const noLayoutPages = ['/c-customers/inbox', '/', '/d-settings/developed-by-ae']
+  const noLayoutPages = ['/c-customers/inbox', '/', '/d-settings/developed-by-ae', '/login']
 
   if (noLayoutPages.includes(pathname)) {
     return <html

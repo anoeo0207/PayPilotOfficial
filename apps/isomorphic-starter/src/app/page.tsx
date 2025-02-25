@@ -1,9 +1,14 @@
+'use client'
+
 import Image from 'next/image';
 import { Button, Title, Text } from 'rizzui';
 // import LaptopImg from '@public/welcome-laptop.png';
 // import MobileImg from '@public/welcome-mobile.png';
+import Router, { useRouter } from 'next/navigation';
+import { routes } from '@/config/routes';
 
 export default function WelcomePage() {
+  const router = useRouter();
   return (
     <div className="flex grow items-center px-6 xl:px-10">
       <div className="mx-auto flex w-full max-w-[1180px] flex-col-reverse items-center justify-between text-center lg:flex-row lg:gap-5 lg:text-start 3xl:max-w-[1520px]">
@@ -25,6 +30,7 @@ export default function WelcomePage() {
               color="primary"
               size="lg"
               className="h-12 px-4 xl:h-14 xl:px-6"
+              onClick={() => router.push(routes.Login.login)}
             >
               Login Now
             </Button>

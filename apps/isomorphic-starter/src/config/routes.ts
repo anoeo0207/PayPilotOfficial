@@ -34,6 +34,10 @@ export const routes = {
     
   },
 
+  Login : {
+    login: "/login"
+  },
+
 
 
 
